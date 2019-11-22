@@ -25,8 +25,7 @@ function confirm() {
         alert("Your password contains spaces")
       } else if (password1.search(/[!|@|#|$|%|&]/) < 0) {
         alert("Your password need at least one special charcter")
-      } 
-        else if (password1 != password2) {
+      } else if (password1 != password2) {
         alert ("\nPassword did not match: Please try again...") 
         return false; 
       } else {
