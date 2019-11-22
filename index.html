@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Boom Boom Room</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>The Boom Boom Room</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+    
+                </div>
+                <div class="col-sm-4">
+                    <form class="border" action="" onsubmit="confirm()">
+                        <h1>create account</h1>
+                        <h2>username</h2>
+                        <input type="text" placeholder="username">
+                        <h2>create password</h2>
+                        <input type="password" id="password1" minlength="8" required placeholder="password">
+                        <input type="button" value="Show Password" onclick="showPassword()"></input>
+                        <h2>confirm password</h2>
+                        <input type="password" id="password2" minlength="8" required placeholder="confirm password">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="col-sm-4">
+    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
