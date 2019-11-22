@@ -7,14 +7,17 @@
 
 function confirm() {
     event.preventDefault();
+    var username = (document.getElementById("username").value)
     var password1 = (document.getElementById("password1").value)
     var password2 = (document.getElementById("password2").value)
     //var regexp = ;
-    if (password1.length > 20) {
-        alert("Your password needs a maximum of 20 characters")
+    if (username.length < 8) {
+        alert("Your username needs a maximum of 8 characters")
+      } else if (password1.length < 10) {
+        alert("Your password needs a maximum of 10 characters")
       } else if (password1.search(/[a-z]/) < 0) {
         alert("Your password needs a lower case letter")
-      } else if(password1.search(/[A-Z]/) < 0) {
+      }else if(password1.search(/[A-Z]/) < 0) {
         alert("Your password needs an uppser case letter")
       } else  if (password1.search(/[0-9]/) < 0) {
         alert("Your password needs a number")
