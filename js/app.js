@@ -11,8 +11,8 @@ function confirm() {
     var password1 = (document.getElementById("password1").value)
     var password2 = (document.getElementById("password2").value)
     //var regexp = ;
-    if (username.length < 8) {
-        alert("Your username needs a maximum of 8 characters")
+      if (username.length < 7) {
+        alert("Your username needs to equal 8 characters or above")
       } else if (password1.length < 10) {
         alert("Your password needs a maximum of 10 characters")
       } else if (password1.search(/[a-z]/) < 0) {
@@ -31,6 +31,8 @@ function confirm() {
       } else {
         location = "https://marlon-morrison.github.io/age-confirm/"
       }
+
+      
     };
 
 function showPassword() {
